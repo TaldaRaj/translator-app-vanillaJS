@@ -6,11 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pirate Translator</title>
     <style>
+        textarea{
+            width: 500px;
+            display: block;
+            margin: 1rem;
+            padding:1rem;
+            height:80px;
+        }
+        button{
+            margin:0rem 1rem;
 
+        }
+
+        #text-output{
+            border : 1px solid black;
+            height:80px;
+            width: 500px;
+            display: block;
+            margin: 1rem;
+            padding:1rem;
+            
+
+        }
     </style>
 </head>
 <body>
-    <h1>Pirate Translator</h1>
+    <h1 style="margin: auto;">Pirate Translator</h1>
+    
+        <textarea name="userText" id="inputText" cols="30" rows="10" placeholder="enter the text in English"></textarea>
+    
+    <button  id="btn-translate">Translate</button>
+
+    <div id="text-output">
+
+    </div>
     <script src="app.js" type="text/javascript"></script>
 </body>
 </html>
